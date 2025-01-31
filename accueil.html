@@ -16,6 +16,8 @@
             justify-content: center;
             align-items: center;
         }
+        
+        /* Estilos del botón */
         .button {
             background-color: white;
             color: black;
@@ -23,15 +25,25 @@
             font-size: 18px;
             border-radius: 25px;
             text-decoration: none;
-            transition: background-color 0.3s;
+            transition: background-color 0.3s, box-shadow 0.3s, transform 0.2s;
         }
+        
+        /* Efecto hover en blanco */
         .button:hover {
-            background-color: #f0f0f0;
+            background-color: black;
+            color: white;
+            box-shadow: 0 0 15px white;
+            transform: scale(1.05);
+        }
+        
+        /* Efecto al hacer clic */
+        .button:active {
+            transform: scale(1);
+            box-shadow: 0 0 10px white;
         }
     </style>
 </head>
 <body>
-    <a href="https://miguelpenaloza09.github.io/miguelpenaloza9/menu" class="button">Bienvenue à mon site web</a>
+    <a href="https://miguelpenaloza09.github.io/miguelpenaloza9/menu" class="button">Bienvenue à mon site web!</a>
 </body>
 </html>
-
