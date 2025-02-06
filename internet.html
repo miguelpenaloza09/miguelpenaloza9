@@ -1,103 +1,105 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Histoire de l'Internet</title>
-	<style>
-    	/* Estilos generales para la página */
-    	body {
-        	font-family: Arial, sans-serif;
-        	margin: 0;
-        	padding: 0;
-        	text-align: center;
-        	background-color: white;
-    	}
-   	 
-    	/* Título principal con tamaño grande */
-    	h1 {
-        	font-size: 68px;
-        	font-weight: bold;
-    	}
-   	 
-    	/* Contenedor de los botones en fila */
-    	.button-container {
-        	display: flex;
-        	justify-content: center;
-        	gap: 15px;
-        	margin-top: 20px;
-        	flex-wrap: wrap; /* Permite que los botones se ajusten si la pantalla es pequeña */
-    	}
-   	 
-    	/* Estilos de los botones con relleno blanco */
-    	.button-white {
-        	background-color: black; /* Fondo negro */
-        	color: white; /* Texto blanco */
-        	padding: 10px 20px; /* Relleno de los botones */
-        	border: 2px solid white; /* Borde blanco */
-        	border-radius: 25px;
-        	font-size: 1.2rem;
-        	cursor: pointer;
-        	transition: transform 0.2s, box-shadow 0.2s;
-    	}
-   	 
-    	/* Efecto al pasar el mouse sobre los botones */
-    	.button-white:hover {
-        	transform: scale(1.1);
-        	box-shadow: 0 0 15px rgba(255, 255, 255, 0.7);
-    	}
-   	 
-    	/* Efecto al hacer clic en los botones */
-    	.button-white:active {
-        	transform: scale(1);
-        	box-shadow: none;
-    	}
-   	 
-    	/* Botón fijo en la esquina inferior derecha */
-    	.button-fixed {
-        	position: fixed;
-        	bottom: 20px;
-        	right: 20px;
-        	background-color: black; /* Fondo negro */
-        	color: white; /* Texto blanco */
-        	padding: 10px 20px; /* Relleno del botón fijo */
-        	border: 2px solid white; /* Borde blanco */
-        	border-radius: 20px;
-        	cursor: pointer;
-        	transition: transform 0.2s, box-shadow 0.2s, background-color 0.2s;
-        	text-decoration: none;
-        	display: inline-block;
-        	font-size: 1.2rem;
-    	}
-   	 
-    	/* Efecto al pasar el mouse sobre el botón fijo */
-    	.button-fixed:hover {
-        	transform: scale(1.1);
-        	box-shadow: 0 0 15px rgba(255, 255, 255, 0.7);
-    	}
-   	 
-    	/* Efecto al hacer clic en el botón fijo */
-    	.button-fixed:active {
-        	transform: scale(1);
-        	box-shadow: none;
-    	}
-	</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Histoire de l'Internet</title>
+    <style>
+        /* Estilos generales para la página */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background-color: white;
+        }
+    
+        /* Título principal con tamaño grande */
+        h1 {
+            font-size: 68px;
+            font-weight: bold;
+        }
+    
+        /* Contenedor de los botones en fila */
+        .button-container {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 20px;
+            flex-wrap: wrap; /* Permite que los botones se ajusten si la pantalla es pequeña */
+        }
+    
+        /* Estilos de los botones con relleno blanco */
+        .button-white {
+            background-color: black; /* Fondo negro */
+            color: white; /* Texto blanco */
+            padding: 10px 20px; /* Relleno de los botones */
+            border: 2px solid white; /* Borde blanco */
+            border-radius: 25px;
+            font-size: 1.2rem;
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;
+            text-decoration: none;
+            display: inline-block;
+        }
+    
+        /* Efecto al pasar el mouse sobre los botones */
+        .button-white:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.7);
+        }
+    
+        /* Efecto al hacer clic en los botones */
+        .button-white:active {
+            transform: scale(1);
+            box-shadow: none;
+        }
+    
+        /* Botón fijo en la esquina inferior derecha */
+        .button-fixed {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: black; /* Fondo negro */
+            color: white; /* Texto blanco */
+            padding: 10px 20px; /* Relleno del botón fijo */
+            border: 2px solid white; /* Borde blanco */
+            border-radius: 20px;
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s, background-color 0.2s;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 1.2rem;
+        }
+    
+        /* Efecto al pasar el mouse sobre el botón fijo */
+        .button-fixed:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.7);
+        }
+    
+        /* Efecto al hacer clic en el botón fijo */
+        .button-fixed:active {
+            transform: scale(1);
+            box-shadow: none;
+        }
+    </style>
 </head>
 <body>
-	<!-- Título principal de la página -->
-	<h1>Histoire de l'Internet</h1>
+    <!-- Título principal de la página -->
+    <h1>Histoire de l'Internet</h1>
     
-	<!-- Contenedor de los botones en fila -->
-	<div class="button-container">
-    	<button class="button-white">Histoire de l'Internet</button>
-    	<button class="button-white">Protocole TCP/IP</button>
-    	<button class="button-white">DNS</button>
-    	<button class="button-white">Routage</button>
-    	<button class="button-white">Réseau pair à pair</button>
-    	<button class="button-white">Conversion décimal à binaire</button>
-	</div>
+    <!-- Contenedor de los botones en fila -->
+    <div class="button-container">
+        <a href="#histoire" class="button-white">Histoire de l'Internet</a>
+        <a href="#tcpip" class="button-white">Protocole TCP/IP</a>
+        <a href="#dns" class="button-white">DNS</a>
+        <a href="#routage" class="button-white">Routage</a>
+        <a href="#p2p" class="button-white">Réseau pair à pair</a>
+        <a href="#conversion" class="button-white">Conversion décimal à binaire</a>
+    </div>
 
-	<!-- Botón fijo en la esquina inferior derecha con hyperlink -->
-	<a href="https://miguelpenaloza09.github.io/miguelpenaloza9/menu" class="button-fixed">Menu</a>
+    <!-- Botón fijo en la esquina inferior derecha con hyperlink -->
+    <a href="https://miguelpenaloza09.github.io/miguelpenaloza9/menu" class="button-fixed">Menu</a>
 </body>
 </html>
